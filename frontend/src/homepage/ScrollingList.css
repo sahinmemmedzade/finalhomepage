@@ -1,0 +1,76 @@
+.scrolling-list {
+    margin-top: 5%;
+    max-height: 52vh;
+    width: 30%;
+background-color: red;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .list-item {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .time, .views, .icon {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .item-text {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .item-text {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; /* Maksimum eni təyin edə bilərsiniz */
+  }
+  @media screen and (max-width:1100px) {
+    .scrolling-list{
+        margin-top: 8%;
+      max-height:40.5vh ;
+    }}
+    @media screen and (max-width:1000px) {
+        .scrolling-list{
+          max-height:30vh ;
+          
+        }
+    .list-item{
+        height: 40px;
+        text-overflow: ellipsis;
+
+    }
+    .item-text{
+        font-size: 12px;
+
+    }
+    }
+    @media screen and (max-width:800px) {
+        .item-text{
+            font-size: 10px;
+    
+        }
+    }
+    @media screen and (max-width:700px) {
+        .scrolling-list {
+            margin-top: 11%;
+max-height:20vh ;
+        }
+        .list-item{
+            height: 25px;
+        }
+    }

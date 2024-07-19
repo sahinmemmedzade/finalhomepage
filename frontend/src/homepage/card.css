@@ -1,0 +1,223 @@
+/* General container styles */
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+    width: 80%;
+    margin-left: 17%;  
+    padding-bottom: 10px;  
+    background-color: blueviolet;
+}
+
+.searchandcards {
+    background-color: #007bff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
+
+/* Search container styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    margin: 20px;
+}
+
+.search-container input {
+    display: none; /* Hidden by default */
+    padding: 5px;
+    border-bottom: 2px solid #007bff; /* Blue bottom border */
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-container.active input {
+    display: inline-block; /* Visible when active */
+    width: 150px;
+    border: none; /* Remove border */
+}
+
+.search-container svg {
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Card styles */
+.card {
+    width: 27%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.card-content {
+    padding: 16px;
+    cursor: pointer;
+}
+
+.card-header .cardcategory {
+    color: greenyellow;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 16px 16px;
+}
+
+.card-footer .date,
+.card-footer .views {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card-footer .date svg,
+.card-footer .views svg {
+    margin-right: 8px;
+}
+
+/* Like and Dislike styles */
+.like-dislike {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.like:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.dislike:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination button:hover {
+    background-color: #e2e6ea;
+}
+@media screen and (max-width:1100px) {
+    .card-footer{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1000px) {
+.card{
+    width: 40%;
+}}
+@media screen and (max-width:802px) {
+    .container{
+        justify-content: center;
+       
+    }
+    .card{
+        margin-left: 10px;
+    }
+
+}
+@media screen and (max-width:685px) {
+    .container{
+flex-direction: column;
+        
+    }
+    .card{
+width: 85%;
+margin-left: 55px;
+    }
+.date{
+    font-size: 20px;
+}
+.views{
+    font-size: 20px;
+}
+.like>svg{
+    font-size: 20px;
+}
+.dislike>svg{
+    font-size: 20px;
+}
+.cardcategory{
+    font-size:22px ;
+}
+.card-content>h3{
+font-size: 28px;
+}
+.card-content>p{
+    font-size: 20px;
+}
+}
+@media screen and (max-width:450px) {
+    .container{
+flex-direction: column;
+        
+    }
+    .card{
+width: 80%;
+margin-left: 55px;
+    }
+.date{
+    font-size: 14px;
+}
+.views{
+    font-size: 14px;
+}
+.like>svg{
+    font-size: 14px;
+}
+.dislike>svg{
+    font-size: 14px;
+}
+.cardcategory{
+    font-size:18px ;
+}
+.card-content>h3{
+font-size: 24px;
+}
+.card-content>p{
+    font-size: 16px;
+}
+}
